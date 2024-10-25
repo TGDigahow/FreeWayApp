@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Way</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        img.logo {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+
+        select, button, input[type="checkbox"] {
+            margin: 10px 0;
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        .content {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        img.route-image {
+            width: 300px;
+            height: 200px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logomarca -->
+    <img src="A:/Free-Way-LOGO.png" alt="Logomarca" class="logo">
+
+    <!-- Dropdown de Opções -->
+    <label for="options">Selecione uma opção:</label>
+    <select id="options">
+        <option value="Biblioteca">Biblioteca</option>
+        <option value="Financeiro">Financeiro</option>
+        <option value="Secretaria">Secretaria</option>
+        <option value="Sala 2.3">Sala 2.3</option>
+    </select>
+
+    <!-- Switch de Acessibilidade -->
+    <label>
+        <input type="checkbox" id="accessibility-switch">
+        Acessibilidade
+    </label>
+
+    <!-- Botão para Carregar Rota -->
+    <button id="load-route-btn">Carregar Rota</button>
+
+    <!-- Container para Exibir o Resultado -->
+    <div id="miniplayer-container" class="content"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
