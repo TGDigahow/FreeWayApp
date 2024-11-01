@@ -7,7 +7,7 @@ def main(page: ft.Page):
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
 
     # logomarca
-    logo = ft.Image(src="A:/Free-Way-LOGO.png", width=150, height=150)
+    logo = ft.Image(src="A:/spacemapslogo.png", width=150, height=150)
 
     # opções
     options = ft.Dropdown(
